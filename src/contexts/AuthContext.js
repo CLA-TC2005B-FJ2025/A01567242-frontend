@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
     return storedUser ? storedUser : null;
   });
 
-  const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || 'http://127.0.0.1:5000'; // Valor por defecto
+  const apiBaseUrl = process.env.REACT_APP_API_BASE_URL || 'https://bug-free-winner-7v9qq9gj6p6p3xrj5-3000.app.github.dev/login'; // Valor por defecto
   console.log(apiBaseUrl);
 
   const login = useCallback(async (username, password) => {
